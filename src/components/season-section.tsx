@@ -1,6 +1,7 @@
 import { Activity, Award, Gauge, Trophy } from "lucide-react";
 import SectionHeading from "@/components/section-heading";
 import Reveal from "@/components/reveal";
+import SeasonChart from "@/components/season-chart";
 import { season } from "@/data/season";
 
 const winRate =
@@ -150,6 +151,12 @@ export default function SeasonSection() {
                 ))}
               </div>
             ) : null}
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.12}>
+          <div className="glass mt-8 overflow-hidden rounded-3xl">
+            <SeasonChart />
           </div>
         </Reveal>
       </div>

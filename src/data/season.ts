@@ -11,6 +11,8 @@ export type MatchResult = {
   alliance: "red" | "blue";
   result: "W" | "L" | "T";
   score: string;
+  teamScore: number | null;
+  opponentScore: number | null;
   opponent: string;
   date: string;
 };
