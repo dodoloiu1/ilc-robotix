@@ -45,9 +45,9 @@ export default function SeasonSection() {
     },
     {
       icon: Award,
-      label: "Best rank",
-      value: bestRank !== null ? `#${bestRank}` : "—",
-      hint: current.rank ?? undefined,
+      label: "Season rank",
+      value: current.rank ?? "—",
+      hint: bestRank !== null ? `best event #${bestRank}` : undefined,
     },
   ];
 
@@ -161,7 +161,7 @@ export default function SeasonSection() {
                               match.result === "W"
                                 ? "text-accent-soft"
                                 : match.result === "L"
-                                  ? "text-maroon-soft"
+                                  ? "text-rose-300"
                                   : "text-zinc-400"
                             }
                           >
