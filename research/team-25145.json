@@ -1,0 +1,173 @@
+{
+  "team_number": 25145,
+  "name": "ILC Robotix",
+  "full_name": "ILC ROBOTIX",
+  "institution": "Colegiul National Ion Luca Caragiale Bucuresti",
+  "location": "Sector 1, B, Bucharest, Romania",
+  "region": "Romania",
+  "league_membership": {
+    "2023": null,
+    "2024": "South",
+    "2025": "Romania South",
+    "2026": null
+  },
+  "rookie_year": 2023,
+  "seasons": {
+    "2022-23 (CENTERSTAGE)": {
+      "participated": true,
+      "events": 3,
+      "awards": [],
+      "note": "Rookie season; 3 Bucharest events in Jan 2024"
+    },
+    "2023-24 (INTO THE DEEP)": {
+      "participated": true,
+      "events": 5,
+      "awards": [],
+      "note": "Innovation Award sponsored by RTX 2nd Place at SRLT"
+    },
+    "2024-25 (DECODE)": {
+      "participated": true,
+      "events": 4,
+      "awards": [],
+      "note": "Judges' Choice Award at SRLT; 12 official events total per 2025 season page"
+    },
+    "2025-26 (BIOBUZZ)": {
+      "participated": false,
+      "events": 0,
+      "awards": [],
+      "note": "FTCScout: 'ILC Robotix has not yet played in any BioBuzz events'"
+    }
+  },
+  "sponsors": [
+    {
+      "name": "Colegiul National Ion Luca Caragiale Bucuresti",
+      "role": "School / sponsor",
+      "source": "FTC Events team page 2024/2025 (sponsors field)"
+    }
+  ],
+  "partners": [],
+  "website_socials": {
+    "orange_alliance_on_the_web": "BIOBUZZ",
+    "official_website": null,
+    "social_media": null,
+    "note": "Orange Alliance lists 'BIOBUZZ' as the team web link; no dedicated team website/social media URLs were found on the queried sources."
+  },
+  "registration_records": [
+    {
+      "program": "Natie Prin Educatie - FIRST Tech Challenge Romania",
+      "url": "https://teams.natieprineducatie.ro/RegistrationStatus/Regionale",
+      "team_id": "RO_107",
+      "team_name": "ILC ROBOTIX",
+      "institution": "Colegiul National Ion Luca Caragalez Bucuresti",
+      "city": "BUCURESTI"
+    }
+  ],
+  "op_ranking_stats": [
+    {
+      "event": "Romania Championship (Mar 14-16, 2025)",
+      "url": "http://www.ftcstats.org/2025/romania.html",
+      "npl_opr": 29.8,
+      "opr": 29.8,
+      "npl_opr_c": 27.8,
+      "auto_opr_c": 5.8,
+      "tele_opr_c": 16.8,
+      "endgame_opr_c": 5.2,
+      "qual_rank": 60,
+      "qual_rank_total": 60,
+      "event_record": "0-6-0",
+      "avg_rp": 0.0,
+      "avg_opp": 264.8
+    },
+    {
+      "event": "Romania Meet Bionic Royals (Jan 25, 2025)",
+      "url": "http://www.ftcstats.org/2025/romania.html",
+      "npl_opr": 28.8,
+      "opr": 41.0,
+      "npl_opr_c": 27.7,
+      "auto_opr_c": 5.3,
+      "tele_opr_c": 17.4,
+      "endgame_opr_c": 4.9,
+      "qual_rank": 10,
+      "qual_rank_total": 60,
+      "event_record": "2-4-0",
+      "avg_rp": 0.67,
+      "avg_opp": 117.5
+    },
+    {
+      "event": "Romania Black Sea Showdown (Jan 18, 2025)",
+      "url": "http://www.ftcstats.org/2025/romania.html",
+      "npl_opr": 25.5,
+      "opr": 25.0,
+      "npl_opr_c": 25.0,
+      "auto_opr_c": 0.1,
+      "tele_opr_c": 19.9,
+      "endgame_opr_c": 5.0,
+      "qual_rank": 9,
+      "qual_rank_total": 60,
+      "event_record": "3-3-0",
+      "avg_rp": 1.0,
+      "avg_opp": 114.8
+    },
+    {
+      "event": "Romania Meet Quantum Robotics (Dec 15, 2024)",
+      "url": "http://www.ftcstats.org/2025/romania.html",
+      "npl_opr": 25.3,
+      "opr": 23.5,
+      "npl_opr_c": 26.3,
+      "auto_opr_c": 1.8,
+      "tele_opr_c": 23.2,
+      "endgame_opr_c": 1.3,
+      "qual_rank": 15,
+      "qual_rank_total": 60,
+      "event_record": "2-4-0",
+      "avg_rp": 0.67,
+      "avg_opp": 121.8
+    },
+    {
+      "event": "Romania South Romania League Tournament (Feb 7-9, 2025)",
+      "url": "http://www.ftcstats.org/2025/romania.html",
+      "npl_opr": 0.5,
+      "opr": 6.8,
+      "npl_opr_c": 5.5,
+      "auto_opr_c": 0.0,
+      "tele_opr_c": 5.5,
+      "endgame_opr_c": 0.0,
+      "qual_rank": 47,
+      "qual_rank_total": 60,
+      "event_record": "2-4-0",
+      "avg_rp": 0.67,
+      "avg_opp": 197.5
+    }
+  ],
+  "league_standing_2025": {
+    "url": "https://ftc-events.firstinspires.org/2025/region/RO/league/S",
+    "rank": 26,
+    "total": 26,
+    "w_l_t": "2-8-0",
+    "plays": 12,
+    "match_points": 58.8,
+    "base_points": 13.0,
+    "auto_points": 11.6,
+    "rs": 1.2
+  },
+  "notes": {
+    "official_event_count": "12 per team summary / 13 per 2025 season page (page contains inconsistent counts)",
+    "season_aggregate_records": "page-stated: 2024 = 9-13-0; 2025 = 3-13-0 (see matches.json for match-level)",
+    "snowy_circuits": "listed on team page (2025) but no match results published on the 2025 season page"
+  },
+  "sources": [
+    "https://ftc-events.firstinspires.org/team/25145",
+    "https://ftc-events.firstinspires.org/2025/team/25145",
+    "https://ftc-events.firstinspires.org/2024/team/25145",
+    "https://ftc-events.firstinspires.org/2023/team/25145",
+    "https://ftc-events.firstinspires.org/2025/ROSM2",
+    "https://ftc-events.firstinspires.org/2025/region/RO/league/S",
+    "https://ftc-events.firstinspires.org/2024/ROCMP",
+    "https://theorangealliance.org/teams/25145",
+    "https://ftcscout.org/teams/25145",
+    "http://www.ftcstats.org/2025/romania.html",
+    "https://controlscout.org/events/2025/ROSM8",
+    "https://controlscout.org/events/2024/ROSM1",
+    "https://teams.natieprineducatie.ro/RegistrationStatus/Regionale"
+  ]
+}

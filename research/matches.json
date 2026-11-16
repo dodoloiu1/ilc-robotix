@@ -1,0 +1,1371 @@
+{
+  "team_number": 25145,
+  "team_name": "ILC Robotix",
+  "description": "Qualification matches only (no playoff matches appeared on the source pages). Score format: Red score - Blue score (Red and Blue alliance team order per the source table).",
+  "matches": [
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Ignite. #17624",
+      "match_number": "Qualification 3",
+      "date": "2024-01-06",
+      "alliance": "Red",
+      "team_score": 24,
+      "opponent_alliance": "Blue",
+      "opponent_score": 110,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19072,
+          "name": null
+        },
+        {
+          "team": 19054,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Ignite. #17624",
+      "match_number": "Qualification 7",
+      "date": "2024-01-06",
+      "alliance": "Blue",
+      "team_score": 10,
+      "opponent_alliance": "Red",
+      "opponent_score": 18,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 22084,
+          "name": null
+        },
+        {
+          "team": 20925,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Ignite. #17624",
+      "match_number": "Qualification 9",
+      "date": "2024-01-06",
+      "alliance": "Blue",
+      "team_score": 24,
+      "opponent_alliance": "Red",
+      "opponent_score": 53,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19131,
+          "name": null
+        },
+        {
+          "team": 20691,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Ignite. #17624",
+      "match_number": "Qualification 11",
+      "date": "2024-01-06",
+      "alliance": "Red",
+      "team_score": 24,
+      "opponent_alliance": "Blue",
+      "opponent_score": 80,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19075,
+          "name": null
+        },
+        {
+          "team": 19131,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Ignite. #17624",
+      "match_number": "Qualification 14",
+      "date": "2024-01-06",
+      "alliance": "Blue",
+      "team_score": 68,
+      "opponent_alliance": "Red",
+      "opponent_score": 69,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 24269,
+          "name": null
+        },
+        {
+          "team": 24530,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Ignite. #17624",
+      "match_number": "Qualification 17",
+      "date": "2024-01-06",
+      "alliance": "Red",
+      "team_score": 89,
+      "opponent_alliance": "Blue",
+      "opponent_score": 60,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19075,
+          "name": null
+        },
+        {
+          "team": 22226,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Qube. #14277",
+      "match_number": "Qualification 2",
+      "date": "2024-01-20",
+      "alliance": "Blue",
+      "team_score": 39,
+      "opponent_alliance": "Red",
+      "opponent_score": 124,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19054,
+          "name": null
+        },
+        {
+          "team": 23203,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Qube. #14277",
+      "match_number": "Qualification 17",
+      "date": "2024-01-20",
+      "alliance": "Red",
+      "team_score": 106,
+      "opponent_alliance": "Blue",
+      "opponent_score": 40,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 14270,
+          "name": null
+        },
+        {
+          "team": 24345,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Qube. #14277",
+      "match_number": "Qualification 20",
+      "date": "2024-01-20",
+      "alliance": "Red",
+      "team_score": 56,
+      "opponent_alliance": "Blue",
+      "opponent_score": 77,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19117,
+          "name": null
+        },
+        {
+          "team": 24530,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCURESTI - 070000 - Qube. #14277",
+      "match_number": "Qualification 25",
+      "date": "2024-01-20",
+      "alliance": "Red",
+      "team_score": 94,
+      "opponent_alliance": "Blue",
+      "opponent_score": 56,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 24269,
+          "name": null
+        },
+        {
+          "team": 14277,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCHAREST 070000 - NATIE",
+      "match_number": "Qualification 2",
+      "date": "2024-01-26",
+      "alliance": "Blue",
+      "team_score": 0,
+      "opponent_alliance": "Red",
+      "opponent_score": 44,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 24345,
+          "name": null
+        },
+        {
+          "team": 25352,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCHAREST 070000 - NATIE",
+      "match_number": "Qualification 7",
+      "date": "2024-01-26",
+      "alliance": "Red",
+      "team_score": 20,
+      "opponent_alliance": "Blue",
+      "opponent_score": 20,
+      "result": "Tie",
+      "opponents": [
+        {
+          "team": 15991,
+          "name": null
+        },
+        {
+          "team": 24345,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCHAREST 070000 - NATIE",
+      "match_number": "Qualification 8",
+      "date": "2024-01-26",
+      "alliance": "Red",
+      "team_score": 26,
+      "opponent_alliance": "Blue",
+      "opponent_score": 5,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 25352,
+          "name": null
+        },
+        {
+          "team": 21476,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event": "RO BUCHAREST 070000 - NATIE",
+      "match_number": "Qualification 10",
+      "date": "2024-01-26",
+      "alliance": "Blue",
+      "team_score": 68,
+      "opponent_alliance": "Red",
+      "opponent_score": 49,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19128,
+          "name": null
+        },
+        {
+          "team": 24345,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Quantum Robotics",
+      "match_number": "Qualification 4",
+      "date": "2024-12-15",
+      "alliance": "Red",
+      "team_score": 50,
+      "opponent_alliance": "Blue",
+      "opponent_score": 185,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19054,
+          "name": null
+        },
+        {
+          "team": 25538,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Quantum Robotics",
+      "match_number": "Qualification 7",
+      "date": "2024-12-15",
+      "alliance": "Blue",
+      "team_score": 9,
+      "opponent_alliance": "Red",
+      "opponent_score": 38,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19055,
+          "name": null
+        },
+        {
+          "team": 19176,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Quantum Robotics",
+      "match_number": "Qualification 12",
+      "date": "2024-12-15",
+      "alliance": "Blue",
+      "team_score": 130,
+      "opponent_alliance": "Red",
+      "opponent_score": 34,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 24345,
+          "name": null
+        },
+        {
+          "team": 23203,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Quantum Robotics",
+      "match_number": "Qualification 18",
+      "date": "2024-12-15",
+      "alliance": "Blue",
+      "team_score": 190,
+      "opponent_alliance": "Red",
+      "opponent_score": 195,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19099,
+          "name": null
+        },
+        {
+          "team": 19055,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Quantum Robotics",
+      "match_number": "Qualification 20",
+      "date": "2024-12-15",
+      "alliance": "Red",
+      "team_score": 147,
+      "opponent_alliance": "Blue",
+      "opponent_score": 273,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 24637,
+          "name": null
+        },
+        {
+          "team": 19049,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Quantum Robotics",
+      "match_number": "Qualification 28",
+      "date": "2024-12-15",
+      "alliance": "Red",
+      "team_score": 96,
+      "opponent_alliance": "Blue",
+      "opponent_score": 41,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 23203,
+          "name": null
+        },
+        {
+          "team": 25352,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Black Sea Showdown",
+      "match_number": "Qualification 3",
+      "date": "2025-01-18",
+      "alliance": "Blue",
+      "team_score": 70,
+      "opponent_alliance": "Red",
+      "opponent_score": 64,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 22226,
+          "name": null
+        },
+        {
+          "team": 26075,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Black Sea Showdown",
+      "match_number": "Qualification 7",
+      "date": "2025-01-18",
+      "alliance": "Blue",
+      "team_score": 140,
+      "opponent_alliance": "Red",
+      "opponent_score": 79,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19064,
+          "name": null
+        },
+        {
+          "team": 24964,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Black Sea Showdown",
+      "match_number": "Qualification 14",
+      "date": "2025-01-18",
+      "alliance": "Red",
+      "team_score": 37,
+      "opponent_alliance": "Blue",
+      "opponent_score": 115,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 21030,
+          "name": null
+        },
+        {
+          "team": 16166,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Black Sea Showdown",
+      "match_number": "Qualification 20",
+      "date": "2025-01-18",
+      "alliance": "Red",
+      "team_score": 137,
+      "opponent_alliance": "Blue",
+      "opponent_score": 78,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 15991,
+          "name": null
+        },
+        {
+          "team": 25352,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Black Sea Showdown",
+      "match_number": "Qualification 24",
+      "date": "2025-01-18",
+      "alliance": "Red",
+      "team_score": 16,
+      "opponent_alliance": "Blue",
+      "opponent_score": 257,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 22226,
+          "name": null
+        },
+        {
+          "team": 14270,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Black Sea Showdown",
+      "match_number": "Qualification 27",
+      "date": "2025-01-18",
+      "alliance": "Blue",
+      "team_score": 116,
+      "opponent_alliance": "Red",
+      "opponent_score": 49,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 17869,
+          "name": null
+        },
+        {
+          "team": 15989,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Bionic Royals",
+      "match_number": "Qualification 2",
+      "date": "2025-01-25",
+      "alliance": "Red",
+      "team_score": 48,
+      "opponent_alliance": "Blue",
+      "opponent_score": 73,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 27247,
+          "name": null
+        },
+        {
+          "team": 28260,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Bionic Royals",
+      "match_number": "Qualification 8",
+      "date": "2025-01-25",
+      "alliance": "Blue",
+      "team_score": 193,
+      "opponent_alliance": "Red",
+      "opponent_score": 28,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 16166,
+          "name": null
+        },
+        {
+          "team": 21030,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Bionic Royals",
+      "match_number": "Qualification 10",
+      "date": "2025-01-25",
+      "alliance": "Blue",
+      "team_score": 148,
+      "opponent_alliance": "Red",
+      "opponent_score": 148,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 27247,
+          "name": null
+        },
+        {
+          "team": 15991,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Bionic Royals",
+      "match_number": "Qualification 12",
+      "date": "2025-01-25",
+      "alliance": "Red",
+      "team_score": 181,
+      "opponent_alliance": "Blue",
+      "opponent_score": 58,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 15989,
+          "name": null
+        },
+        {
+          "team": 24037,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Bionic Royals",
+      "match_number": "Qualification 16",
+      "date": "2025-01-25",
+      "alliance": "Blue",
+      "team_score": 71,
+      "opponent_alliance": "Red",
+      "opponent_score": 168,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 24037,
+          "name": null
+        },
+        {
+          "team": 19067,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Meet Bionic Royals",
+      "match_number": "Qualification 22",
+      "date": "2025-01-25",
+      "alliance": "Blue",
+      "team_score": 151,
+      "opponent_alliance": "Red",
+      "opponent_score": 75,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19128,
+          "name": null
+        },
+        {
+          "team": 19151,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "South Romania League Tournament",
+      "match_number": "Qualification 11",
+      "date": "2025-02-07",
+      "alliance": "Red",
+      "team_score": 85,
+      "opponent_alliance": "Blue",
+      "opponent_score": 381,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 25538,
+          "name": null
+        },
+        {
+          "team": 22226,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "South Romania League Tournament",
+      "match_number": "Qualification 28",
+      "date": "2025-02-08",
+      "alliance": "Red",
+      "team_score": 147,
+      "opponent_alliance": "Blue",
+      "opponent_score": 88,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19084,
+          "name": null
+        },
+        {
+          "team": 17869,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "South Romania League Tournament",
+      "match_number": "Qualification 37",
+      "date": "2025-02-08",
+      "alliance": "Red",
+      "team_score": 243,
+      "opponent_alliance": "Blue",
+      "opponent_score": 23,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19099,
+          "name": null
+        },
+        {
+          "team": 19067,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "South Romania League Tournament",
+      "match_number": "Qualification 44",
+      "date": "2025-02-08",
+      "alliance": "Blue",
+      "team_score": 72,
+      "opponent_alliance": "Red",
+      "opponent_score": 125,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 27247,
+          "name": null
+        },
+        {
+          "team": 19075,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "South Romania League Tournament",
+      "match_number": "Qualification 68",
+      "date": "2025-02-08",
+      "alliance": "Red",
+      "team_score": 278,
+      "opponent_alliance": "Blue",
+      "opponent_score": 186,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19098,
+          "name": null
+        },
+        {
+          "team": 19131,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "South Romania League Tournament",
+      "match_number": "Qualification 87",
+      "date": "2025-02-09",
+      "alliance": "Blue",
+      "team_score": 158,
+      "opponent_alliance": "Red",
+      "opponent_score": 120,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 21050,
+          "name": null
+        },
+        {
+          "team": 19116,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Romania Championship",
+      "match_number": "Qualification 3",
+      "date": "2025-03-14",
+      "alliance": "Blue",
+      "team_score": 62,
+      "opponent_alliance": "Red",
+      "opponent_score": 371,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 20265,
+          "name": null
+        },
+        {
+          "team": 23161,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/ROCMP/qualifications?team=25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Romania Championship",
+      "match_number": "Qualification 22",
+      "date": "2025-03-14",
+      "alliance": "Red",
+      "team_score": 368,
+      "opponent_alliance": "Blue",
+      "opponent_score": 214,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 17844,
+          "name": null
+        },
+        {
+          "team": 24033,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/ROCMP/qualifications?team=25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Romania Championship",
+      "match_number": "Qualification 38",
+      "date": "2025-03-15",
+      "alliance": "Red",
+      "team_score": 61,
+      "opponent_alliance": "Blue",
+      "opponent_score": 214,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19061,
+          "name": null
+        },
+        {
+          "team": 19104,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/ROCMP/qualifications?team=25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Romania Championship",
+      "match_number": "Qualification 59",
+      "date": "2025-03-15",
+      "alliance": "Red",
+      "team_score": 285,
+      "opponent_alliance": "Blue",
+      "opponent_score": 214,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 15993,
+          "name": null
+        },
+        {
+          "team": 17860,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/ROCMP/qualifications?team=25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Romania Championship",
+      "match_number": "Qualification 70",
+      "date": "2025-03-15",
+      "alliance": "Red",
+      "team_score": 231,
+      "opponent_alliance": "Blue",
+      "opponent_score": 183,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19056,
+          "name": null
+        },
+        {
+          "team": 22017,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/ROCMP/qualifications?team=25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event": "Romania Championship",
+      "match_number": "Qualification 79",
+      "date": "2025-03-16",
+      "alliance": "Blue",
+      "team_score": 135,
+      "opponent_alliance": "Red",
+      "opponent_score": 195,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 12560,
+          "name": null
+        },
+        {
+          "team": 17875,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2024/ROCMP/qualifications?team=25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "New Year New Robots",
+      "match_number": "Qualification 4",
+      "date": "2026-01-18",
+      "alliance": "Blue",
+      "team_score": 29,
+      "opponent_alliance": "Red",
+      "opponent_score": 95,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 24964,
+          "name": null
+        },
+        {
+          "team": 22226,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "New Year New Robots",
+      "match_number": "Qualification 6",
+      "date": "2026-01-18",
+      "alliance": "Red",
+      "team_score": 32,
+      "opponent_alliance": "Blue",
+      "opponent_score": 99,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 15972,
+          "name": null
+        },
+        {
+          "team": 19062,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "New Year New Robots",
+      "match_number": "Qualification 9",
+      "date": "2026-01-18",
+      "alliance": "Red",
+      "team_score": 80,
+      "opponent_alliance": "Blue",
+      "opponent_score": 64,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 20925,
+          "name": null
+        },
+        {
+          "team": 34059,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "New Year New Robots",
+      "match_number": "Qualification 14",
+      "date": "2026-01-18",
+      "alliance": "Blue",
+      "team_score": 36,
+      "opponent_alliance": "Red",
+      "opponent_score": 62,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19063,
+          "name": null
+        },
+        {
+          "team": 20691,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "New Year New Robots",
+      "match_number": "Qualification 18",
+      "date": "2026-01-18",
+      "alliance": "Blue",
+      "team_score": 107,
+      "opponent_alliance": "Red",
+      "opponent_score": 160,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 20925,
+          "name": null
+        },
+        {
+          "team": 19064,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "New Year New Robots",
+      "match_number": "Qualification 21",
+      "date": "2026-01-18",
+      "alliance": "Red",
+      "team_score": 63,
+      "opponent_alliance": "Blue",
+      "opponent_score": 18,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19073,
+          "name": null
+        },
+        {
+          "team": 21050,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Future At High Speed",
+      "match_number": "Qualification 5",
+      "date": "2026-01-24",
+      "alliance": "Red",
+      "team_score": 27,
+      "opponent_alliance": "Blue",
+      "opponent_score": 165,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 26075,
+          "name": null
+        },
+        {
+          "team": 20925,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Future At High Speed",
+      "match_number": "Qualification 10",
+      "date": "2026-01-24",
+      "alliance": "Blue",
+      "team_score": 62,
+      "opponent_alliance": "Red",
+      "opponent_score": 51,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19090,
+          "name": null
+        },
+        {
+          "team": 21071,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Future At High Speed",
+      "match_number": "Qualification 15",
+      "date": "2026-01-24",
+      "alliance": "Red",
+      "team_score": 83,
+      "opponent_alliance": "Blue",
+      "opponent_score": 114,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19084,
+          "name": null
+        },
+        {
+          "team": 17881,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Future At High Speed",
+      "match_number": "Qualification 19",
+      "date": "2026-01-24",
+      "alliance": "Blue",
+      "team_score": 311,
+      "opponent_alliance": "Red",
+      "opponent_score": 167,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19099,
+          "name": null
+        },
+        {
+          "team": 24909,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Future At High Speed",
+      "match_number": "Qualification 21",
+      "date": "2026-01-24",
+      "alliance": "Blue",
+      "team_score": 200,
+      "opponent_alliance": "Red",
+      "opponent_score": 22,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 14277,
+          "name": null
+        },
+        {
+          "team": 19075,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Future At High Speed",
+      "match_number": "Qualification 29",
+      "date": "2026-01-24",
+      "alliance": "Blue",
+      "team_score": 110,
+      "opponent_alliance": "Red",
+      "opponent_score": 135,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 21455,
+          "name": null
+        },
+        {
+          "team": 15991,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Romania South League Tournament",
+      "match_number": "Qualification 5",
+      "date": "2026-01-31",
+      "alliance": "Blue",
+      "team_score": 180,
+      "opponent_alliance": "Red",
+      "opponent_score": 13,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 24155,
+          "name": null
+        },
+        {
+          "team": 19059,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Romania South League Tournament",
+      "match_number": "Qualification 12",
+      "date": "2026-01-31",
+      "alliance": "Red",
+      "team_score": 151,
+      "opponent_alliance": "Blue",
+      "opponent_score": 52,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19131,
+          "name": null
+        },
+        {
+          "team": 27850,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Romania South League Tournament",
+      "match_number": "Qualification 17",
+      "date": "2026-01-31",
+      "alliance": "Blue",
+      "team_score": 143,
+      "opponent_alliance": "Red",
+      "opponent_score": 165,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19055,
+          "name": null
+        },
+        {
+          "team": 26075,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Romania South League Tournament",
+      "match_number": "Qualification 21",
+      "date": "2026-01-31",
+      "alliance": "Blue",
+      "team_score": 96,
+      "opponent_alliance": "Red",
+      "opponent_score": 98,
+      "result": "L",
+      "opponents": [
+        {
+          "team": 19084,
+          "name": null
+        },
+        {
+          "team": 20925,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Romania South League Tournament",
+      "match_number": "Qualification 31",
+      "date": "2026-02-01",
+      "alliance": "Blue",
+      "team_score": 143,
+      "opponent_alliance": "Red",
+      "opponent_score": 17,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 19075,
+          "name": null
+        },
+        {
+          "team": 21050,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event": "Romania South League Tournament",
+      "match_number": "Qualification 38",
+      "date": "2026-02-01",
+      "alliance": "Red",
+      "team_score": 167,
+      "opponent_alliance": "Blue",
+      "opponent_score": 75,
+      "result": "W",
+      "opponents": [
+        {
+          "team": 24964,
+          "name": null
+        },
+        {
+          "team": 20691,
+          "name": null
+        }
+      ],
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    }
+  ]
+}

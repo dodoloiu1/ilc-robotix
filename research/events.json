@@ -1,0 +1,129 @@
+{
+  "team_number": 25145,
+  "events": [
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event_name": "RO BUCURESTI - 070000 - Ignite. #17624",
+      "location": "Bucharest, B, Romania",
+      "date": "January 5-6, 2024",
+      "placement": null,
+      "awards": [],
+      "rank_note": "rank not published on page",
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event_name": "RO BUCURESTI - 070000 - Qube. #14277",
+      "location": "Bucharest, B, Romania",
+      "date": "January 20, 2024",
+      "placement": null,
+      "awards": [],
+      "rank_note": "rank not published on page",
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2022-23 (CENTERSTAGE)",
+      "event_name": "RO BUCHAREST 070000 - NATIE",
+      "location": "Bucharest, B, Romania",
+      "date": "January 25-27, 2024",
+      "placement": null,
+      "awards": [],
+      "rank_note": "rank not published on page",
+      "source": "https://ftc-events.firstinspires.org/2023/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event_name": "Meet Quantum Robotics",
+      "location": "Bucharest, B, Romania",
+      "date": "December 15, 2024",
+      "placement": null,
+      "awards": [],
+      "rank_note": "rank not published on page",
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event_name": "Black Sea Showdown",
+      "location": "Bucharest, B, Romania",
+      "date": "January 18, 2025",
+      "placement": null,
+      "awards": [],
+      "rank_note": "rank not published on page",
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event_name": "Meet Bionic Royals",
+      "location": "Bucharest, B, Romania",
+      "date": "January 25, 2025",
+      "placement": null,
+      "awards": [],
+      "rank_note": "rank not published on page",
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event_name": "South Romania League Tournament",
+      "location": "Bucharest, B, Romania",
+      "date": "February 7-9, 2025",
+      "placement": "39 of 58",
+      "awards": [
+        "Innovate Award sponsored by RTX (2nd Place)"
+      ],
+      "rank_note": "FTCStats per-event rank 47",
+      "source": "https://ftc-events.firstinspires.org/2024/team/25145"
+    },
+    {
+      "season": "2023-24 (INTO THE DEEP)",
+      "event_name": "Romania Championship",
+      "location": "Bucharest, B, Romania",
+      "date": "March 14-16, 2025",
+      "placement": "60 of 60",
+      "awards": [],
+      "rank_note": "5 teams advance to FIRST Championship; FTCStats per-event rank 60",
+      "source": "https://ftc-events.firstinspires.org/2024/ROCMP"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event_name": "Snowy Circuits",
+      "location": "Bucharest, B, Romania (Colegiul Naţional de Informatică „Tudor Vianu”),",
+      "date": "January 17, 2026",
+      "placement": null,
+      "awards": [],
+      "rank_note": "listed on team page; no match results published on 2025 season page",
+      "source": "https://ftc-events.firstinspires.org/2025/ROSM2"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event_name": "New Year New Robots",
+      "location": "Bucharest, B, Romania",
+      "date": "January 18, 2026",
+      "placement": null,
+      "awards": [],
+      "rank_note": "not published (rank 0 of 0)",
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event_name": "Future At High Speed",
+      "location": "Bucharest, B, Romania",
+      "date": "January 24, 2026",
+      "placement": null,
+      "awards": [],
+      "rank_note": "not published (rank 0 of 0)",
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    },
+    {
+      "season": "2024-25 (DECODE)",
+      "event_name": "Romania South League Tournament",
+      "location": "Bucharest, B, Romania",
+      "date": "January 31 - February 1, 2026",
+      "placement": "25 of 26",
+      "awards": [
+        "Judges' Choice Award"
+      ],
+      "rank_note": "FTCStats per-event rank 47; league standing 26 of 26 (W-L-T 2-8-0)",
+      "source": "https://ftc-events.firstinspires.org/2025/team/25145"
+    }
+  ]
+}
