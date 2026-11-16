@@ -65,7 +65,7 @@ export default function SponsorsSection() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a href="#sponsors" className="btn-primary !py-2.5">
+              <a href="ILC-ROBOTIX-presentation.pdf" download className="btn-primary !py-2.5">
                 <Download className="h-4 w-4" />
                 Download media kit
               </a>

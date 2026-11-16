@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>ILC ROBOTIX — Team Presentation</title>
+<style>
+  :root {
+    --maroon: #4a2b2e;
+    --maroon-deep: #332026;
+    --maroon-soft: #6b3d42;
+    --lav: #a8a7d8;
+    --lav-soft: #cbcbe9;
+    --brass: #d4a24a;
+    --ink: #120a0c;
+  }
+  * { box-sizing: border-box; }
+  @page { size: 1280px 720px; margin: 0; }
+  html, body { margin: 0; padding: 0; background: var(--maroon); }
+  body {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+    color: var(--lav-soft);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .slide {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(168, 167, 216, 0.10), transparent 60%),
+      linear-gradient(160deg, #532f33 0%, var(--maroon) 45%, var(--maroon-deep) 100%);
+    page-break-after: always;
+    break-after: page;
+    padding: 64px 76px;
+  }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+  .grid-lines {
+    position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
+    background-image:
+      linear-gradient(to right, rgba(168,167,216,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(168,167,216,0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 20%, transparent 78%);
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--lav); font-weight: 600;
+  }
+  .eyebrow::before { content: ""; width: 26px; height: 1px; background: var(--lav); }
+  h1 { font-size: 84px; line-height: 0.98; margin: 18px 0 0; color: #fff; letter-spacing: -0.02em; }
+  h2 { font-size: 46px; line-height: 1.05; margin: 14px 0 0; color: #fff; letter-spacing: -0.01em; }
+  h3 { font-size: 20px; margin: 0; color: #fff; }
+  p.lead { font-size: 21px; line-height: 1.5; color: var(--lav-soft); max-width: 720px; margin: 18px 0 0; }
+  .lav { color: var(--lav); }
+  .brass { color: var(--brass); }
+  .num { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .rule { height: 1px; background: linear-gradient(to right, var(--lav), transparent); margin: 26px 0; opacity: 0.6; }
+  .footer {
+    position: absolute; left: 76px; right: 76px; bottom: 34px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(203,198,233,0.6);
+  }
+  .footer .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--lav); display: inline-block; margin-right: 10px; }
+  .card {
+    background: rgba(18, 10, 12, 0.42);
+    border: 1px solid rgba(168, 167, 216, 0.28);
+    border-radius: 18px;
+    padding: 22px 24px;
+  }
+  .card .k { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(203,198,233,0.62); }
+  .card .v { font-size: 34px; color: #fff; margin-top: 8px; }
+  .card .s { font-size: 13px; color: rgba(203,198,233,0.7); margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  th { text-align: left; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--lav); font-weight: 600; padding: 10px 12px; border-bottom: 1px solid rgba(168,167,216,0.35); }
+  td { padding: 11px 12px; border-bottom: 1px solid rgba(168,167,216,0.14); color: var(--lav-soft); }
+  td.num, th.num { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .pill { display: inline-block; padding: 4px 12px; border: 1px solid rgba(168,167,216,0.4); border-radius: 999px; font-size: 12px; color: var(--lav); letter-spacing: 0.08em; }
+  .pill.brass { border-color: rgba(212,162,74,0.55); color: var(--brass); }
+  .cols { display: grid; gap: 22px; }
+  .logo-ring {
+    width: 168px; height: 168px; border-radius: 28px; overflow: hidden;
+    border: 1px solid rgba(168,167,216,0.5);
+    box-shadow: 0 0 70px -18px rgba(168,167,216,0.6);
+    flex: 0 0 auto;
+  }
+  .logo-ring img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  ul.tight { margin: 14px 0 0; padding: 0; list-style: none; }
+  ul.tight li { position: relative; padding-left: 20px; margin-bottom: 10px; font-size: 17px; line-height: 1.4; color: var(--lav-soft); }
+  ul.tight li::before { content: ""; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: var(--lav); }
+  .title-wrap { display: flex; gap: 48px; align-items: center; }
+  .big-stat { font-size: 62px; color: #fff; line-height: 1; }
+  .subtitle { font-size: 26px; color: var(--lav); margin-top: 10px; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+
+<!-- 1 · TITLE -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <div style="display:flex; flex-direction:column; justify-content:center; height:100%;">
+    <div class="title-wrap">
+      <div class="logo-ring"><img src="logo.jpg" alt="ILC ROBOTIX mascot" /></div>
+      <div>
+        <span class="eyebrow">FIRST Tech Challenge · Team #25145</span>
+        <h1>ILC<br />ROBOTIX</h1>
+        <p class="lead" style="max-width:560px;">
+          Student robotics from <span class="lav">Colegiul Național „Ion Luca Caragiale”</span>,
+          Bucharest — designing, machining, wiring and coding competition robots since 2023.
+        </p>
+        <div style="margin-top:26px; display:flex; gap:10px; flex-wrap:wrap;">
+          <span class="pill">2025–26 · BIOBUZZ</span>
+          <span class="pill">Romania South League</span>
+          <span class="pill">Nație Prin Educație</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span><span class="dot"></span>ILC ROBOTIX · FTC #25145</span><span>01 / 08</span></div>
+</section>
+
+<!-- 2 · WHO WE ARE -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <span class="eyebrow">Who we are</span>
+  <h2>A school team with a professional build culture</h2>
+  <div class="cols" style="grid-template-columns: 1.1fr 0.9fr; margin-top:34px;">
+    <div>
+      <p class="lead" style="margin-top:0;">
+        Based in Sector 1, Bucharest, ILC ROBOTIX brings together students across three
+        divisions. Every season the documentation is handed down as an open engineering
+        specification, and alumni mentor current members.
+      </p>
+      <div class="cols" style="grid-template-columns: repeat(3, 1fr;); margin-top:26px;">
+        <div class="card"><div class="k">Hardware</div><div class="s" style="margin-top:8px;">Onshape CAD · 3D printing · CNC · drivetrain design</div></div>
+        <div class="card"><div class="k">Software</div><div class="s" style="margin-top:8px;">Java/Kotlin · FTC SDK · Road Runner · OpenCV</div></div>
+        <div class="card"><div class="k">PR &amp; Marketing</div><div class="s" style="margin-top:8px;">Social media · sponsorship · photography</div></div>
+      </div>
+    </div>
+    <div class="card" style="display:flex; flex-direction:column; justify-content:center; gap:18px;">
+      <div><div class="k">Institution</div><div class="v" style="font-size:22px; line-height:1.3;">Colegiul Național „Ion Luca Caragiale”</div></div>
+      <div><div class="k">Rookie year</div><div class="v num">2023</div></div>
+      <div><div class="k">League</div><div class="v num">Romania South</div></div>
+      <div><div class="k">Registration</div><div class="v num">RO_107</div></div>
+      <div><div class="k">Team members</div><div class="v num">12+</div></div>
+    </div>
+  </div>
+  <div class="footer"><span><span class="dot"></span>Who we are</span><span>02 / 08</span></div>
+</section>
+
+<!-- 3 · COMPETITIVE RECORD -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <span class="eyebrow">Competitive record</span>
+  <h2>62 verified qualification matches</h2>
+  <div class="cols" style="grid-template-columns: repeat(4, 1fr); margin-top:30px;">
+    <div class="card"><div class="k">Matches analysed</div><div class="v num">62</div></div>
+    <div class="card"><div class="k">Total wins</div><div class="v num">27</div></div>
+    <div class="card"><div class="k">Awards earned</div><div class="v num">2</div></div>
+    <div class="card"><div class="k">Best event OPR</div><div class="v num">41.0</div></div>
+  </div>
+  <div class="rule"></div>
+  <table>
+    <thead>
+      <tr><th>Season</th><th>Game</th><th class="num">Matches</th><th class="num">W</th><th class="num">L</th><th class="num">T</th><th>Awards</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>2022–23</td><td>CENTERSTAGE</td><td class="num">14</td><td class="num">5</td><td class="num">8</td><td class="num">1</td><td>—</td></tr>
+      <tr><td>2023–24</td><td>INTO THE DEEP</td><td class="num">30</td><td class="num">12</td><td class="num">18</td><td class="num">0</td><td>Innovate Award (RTX, 2nd)</td></tr>
+      <tr><td>2024–25</td><td>DECODE</td><td class="num">18</td><td class="num">10</td><td class="num">8</td><td class="num">0</td><td>Judges' Choice Award</td></tr>
+      <tr><td>2025–26</td><td>BIOBUZZ</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td>Season underway</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13px; color:rgba(203,198,233,0.6); margin-top:18px;">
+    Source: FTC Events, FTCStats and The Orange Alliance match records, verified 2026-11-17.
+  </p>
+  <div class="footer"><span><span class="dot"></span>Competitive record</span><span>03 / 08</span></div>
+</section>
+
+<!-- 4 · SEASON HIGHLIGHTS -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <span class="eyebrow">Season highlights</span>
+  <h2>Per-event performance, 2023–24 Into The Deep</h2>
+  <div class="cols" style="grid-template-columns: 1.5fr 1fr; margin-top:28px;">
+    <div>
+      <table>
+        <thead>
+          <tr><th>Event</th><th class="num">OPR</th><th class="num">Rank</th><th class="num">Record</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Meet Quantum Robotics</td><td class="num">23.5</td><td class="num">#15 / 60</td><td class="num">2-4-0</td></tr>
+          <tr><td>Black Sea Showdown</td><td class="num">25.0</td><td class="num">#9 / 60</td><td class="num">3-3-0</td></tr>
+          <tr><td>Meet Bionic Royals</td><td class="num">41.0</td><td class="num">#10 / 60</td><td class="num">2-4-0</td></tr>
+          <tr><td>South Romania League Tournament</td><td class="num">6.8</td><td class="num">#47 / 60</td><td class="num">2-4-0</td></tr>
+          <tr><td>Romania Championship</td><td class="num">29.8</td><td class="num">#60 / 60</td><td class="num">0-6-0</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:13px; color:rgba(203,198,233,0.6); margin-top:16px;">
+        OPR and ranks as published by FTCStats for the Romania 2024–25 region.
+      </p>
+    </div>
+    <div class="cols" style="grid-template-columns:1fr; gap:16px;">
+      <div class="card" style="border-color:rgba(212,162,74,0.5);">
+        <div class="k brass">Award · 2025</div>
+        <h3 style="margin-top:8px;">Innovate Award<span class="brass"> sponsored by RTX</span></h3>
+        <div class="s" style="margin-top:6px; font-size:14px;">2nd Place — South Romania League Tournament</div>
+      </div>
+      <div class="card" style="border-color:rgba(212,162,74,0.5);">
+        <div class="k brass">Award · 2026</div>
+        <h3 style="margin-top:8px;">Judges' Choice Award</h3>
+        <div class="s" style="margin-top:6px; font-size:14px;">Romania South League Tournament</div>
+      </div>
+      <div class="card">
+        <div class="k">2024–25 league standing</div>
+        <div class="v num" style="font-size:26px; margin-top:8px;">26 / 26</div>
+        <div class="s">W-L-T 2-8-0 · 12 plays · RS 1.20</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span><span class="dot"></span>Season highlights</span><span>04 / 08</span></div>
+</section>
+
+<!-- 5 · ENGINEERING -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <span class="eyebrow">Engineering</span>
+  <h2>Three subsystems, one robot</h2>
+  <div class="cols" style="grid-template-columns: repeat(3, 1fr); margin-top:30px;">
+    <div class="card">
+      <div class="k">01 · Localization</div>
+      <h3 style="margin-top:10px;">Odometry &amp; pose</h3>
+      <ul class="tight">
+        <li>3 dead-wheel pods, 0.5% drift correction</li>
+        <li>IMU gyro fusion for heading hold</li>
+        <li>Road Runner motion profiles</li>
+        <li>Vision-aided global reset</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k">02 · Vision</div>
+      <h3 style="margin-top:10px;">Limelight 3A pipeline</h3>
+      <ul class="tight">
+        <li>Retro-reflective tape at 60 fps</li>
+        <li>AprilTag 6D pose estimation</li>
+        <li>On-device neural detection</li>
+        <li>NetworkTables → Control Hub</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="k">03 · End effector</div>
+      <h3 style="margin-top:10px;">Intake &amp; turret</h3>
+      <ul class="tight">
+        <li>Dual compliant-wheel intake</li>
+        <li>Slip-ring continuous rotation</li>
+        <li>State-machine stall detection</li>
+        <li>Quick-release outtake</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rule"></div>
+  <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+    <span class="k" style="font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(203,198,233,0.62);">Hardware:</span>
+    <span class="pill">REV Control Hub</span>
+    <span class="pill">Limelight 3A</span>
+    <span class="pill">goBILDA drivetrain</span>
+    <span class="pill">goBILDA odometry</span>
+    <span class="pill">REV SPD20 servos</span>
+  </div>
+  <div class="footer"><span><span class="dot"></span>Engineering</span><span>05 / 08</span></div>
+</section>
+
+<!-- 6 · ROBOT BLUEPRINT -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <span class="eyebrow">Hardware platform</span>
+  <h2>Chassis blueprint</h2>
+  <div class="cols" style="grid-template-columns: 1.15fr 0.85fr; margin-top:24px; align-items:center;">
+    <div style="display:flex; justify-content:center;">
+      <svg viewBox="0 0 520 420" width="520" height="420" fill="none" stroke="#a8a7d8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- chassis -->
+        <rect x="120" y="120" width="280" height="180" rx="16" opacity="0.9" />
+        <rect x="150" y="150" width="220" height="120" rx="10" opacity="0.35" />
+        <!-- wheels -->
+        <circle cx="120" cy="90" r="34" />
+        <circle cx="400" cy="90" r="34" />
+        <circle cx="120" cy="330" r="34" />
+        <circle cx="400" cy="330" r="34" />
+        <circle cx="120" cy="90" r="12" fill="#a8a7d8" stroke="none" />
+        <circle cx="400" cy="90" r="12" fill="#a8a7d8" stroke="none" />
+        <circle cx="120" cy="330" r="12" fill="#a8a7d8" stroke="none" />
+        <circle cx="400" cy="330" r="12" fill="#a8a7d8" stroke="none" />
+        <!-- turret -->
+        <circle cx="260" cy="210" r="58" />
+        <rect x="238" y="188" width="44" height="44" rx="8" opacity="0.6" />
+        <line x1="260" y1="210" x2="260" y2="40" />
+        <circle cx="260" cy="40" r="9" fill="#d4a24a" stroke="none" />
+        <!-- intake -->
+        <rect x="210" y="300" width="100" height="46" rx="8" opacity="0.7" />
+        <line x1="230" y1="300" x2="230" y2="346" opacity="0.5" />
+        <line x1="290" y1="300" x2="290" y2="346" opacity="0.5" />
+        <!-- odometry pods -->
+        <circle cx="90" cy="210" r="14" />
+        <circle cx="430" cy="210" r="14" />
+        <!-- callout lines -->
+        <line x1="60" y1="40" x2="120" y2="90" opacity="0.5" />
+        <line x1="460" y1="40" x2="400" y2="90" opacity="0.5" />
+        <line x1="90" y1="380" x2="90" y2="225" opacity="0.5" />
+        <line x1="260" y1="30" x2="260" y2="150" opacity="0.5" />
+      </svg>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="k">Drive</div>
+        <div class="s" style="margin-top:8px; font-size:15px;">4-wheel goBILDA drivetrain, Road Runner trajectories</div>
+      </div>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="k">Turret</div>
+        <div class="s" style="margin-top:8px; font-size:15px;">Slip-ring outtake with continuous rotation and vision aiming</div>
+      </div>
+      <div class="card">
+        <div class="k">Sensing</div>
+        <div class="s" style="margin-top:8px; font-size:15px;">3 odometry pods + IMU + Limelight 3A fused at 16 ms loops</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span><span class="dot"></span>Hardware platform</span><span>06 / 08</span></div>
+</section>
+
+<!-- 7 · SPONSORSHIP -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <span class="eyebrow">Sponsorship</span>
+  <h2>Partner with the team</h2>
+  <div class="cols" style="grid-template-columns: repeat(4, 1fr); margin-top:28px;">
+    <div class="card"><div class="k">Title Partner</div><div class="v num">€2,500+</div><ul class="tight"><li>Robot &amp; pit branding</li><li>Co-branded campaign</li><li>Quarterly impact report</li></ul></div>
+    <div class="card"><div class="k">Gold</div><div class="v num">€1,000+</div><ul class="tight"><li>Uniform &amp; pit banner</li><li>Social features</li><li>STEM workshop co-branding</li></ul></div>
+    <div class="card"><div class="k">Silver</div><div class="v num">€500+</div><ul class="tight"><li>Website sponsor wall</li><li>Livestream recognition</li><li>Season impact summary</li></ul></div>
+    <div class="card"><div class="k">Community</div><div class="v num">In-kind</div><ul class="tight"><li>Parts &amp; machining</li><li>Engineer mentorship</li><li>Facility tours</li></ul></div>
+  </div>
+  <div class="rule"></div>
+  <div class="cols" style="grid-template-columns: repeat(4, 1fr);">
+    <div class="card"><div class="k">Students reached</div><div class="v num">120+</div></div>
+    <div class="card"><div class="k">Outreach events / year</div><div class="v num">8</div></div>
+    <div class="card"><div class="k">Mentored rookie teams</div><div class="v num">3</div></div>
+    <div class="card"><div class="k">Build hours / season</div><div class="v num">600+</div></div>
+  </div>
+  <div class="footer"><span><span class="dot"></span>Sponsorship</span><span>07 / 08</span></div>
+</section>
+
+<!-- 8 · CONTACT -->
+<section class="slide">
+  <div class="grid-lines"></div>
+  <div style="display:flex; flex-direction:column; justify-content:center; height:100%;">
+    <span class="eyebrow">Contact</span>
+    <h2>Build the next season with us</h2>
+    <p class="lead">
+      We recruit at the start of every season across hardware, software and outreach —
+      and we partner with organisations that want to put Romanian STEM in front of students.
+    </p>
+    <div class="cols" style="grid-template-columns: repeat(3, 1fr); margin-top:34px;">
+      <div class="card"><div class="k">Team</div><div class="s" style="margin-top:8px; font-size:15px;">ILC ROBOTIX · FTC #25145</div><div class="s">Colegiul Național „Ion Luca Caragiale”, Sector 1, Bucharest</div></div>
+      <div class="card"><div class="k">Records</div><div class="s" style="margin-top:8px; font-size:15px;">FTC Events · The Orange Alliance · FTCStats</div><div class="s">ftc-events.firstinspires.org/team/25145</div></div>
+      <div class="card"><div class="k">Partner</div><div class="s" style="margin-top:8px; font-size:15px;">sponsorship@ilc-robotix.ro</div><div class="s">Media kit available on request</div></div>
+    </div>
+  </div>
+  <div class="footer"><span><span class="dot"></span>ILC ROBOTIX · FTC #25145</span><span>08 / 08</span></div>
+</section>
+
+</body>
+</html>
