@@ -35,7 +35,9 @@ export const DIVISIONS: Division[] = [
 
 export const HERITAGE = {
   school: "Colegiul Național „Ion Luca Caragiale”",
-  city: "Bucharest, Romania",
+  city: "Sector 1, Bucharest, Romania",
   program: "Nație Prin Educație / FTC Romania",
-  since: "2021",
+  league: "Romania South",
+  since: "2023",
+  registrationId: "RO_107",
 };

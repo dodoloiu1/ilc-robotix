@@ -7,7 +7,9 @@ export const TEAM = {
   country: "Romania",
   program: "FIRST Tech Challenge",
   season: "2025–2026",
-  game: "INTO THE DEEP",
+  game: "BIOBUZZ",
+  rookieYear: "2023",
+  league: "Romania South",
   affiliation: "Nație Prin Educație / FTC Romania",
 } as const;
 
@@ -19,7 +21,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const SOCIALS = [
-  { label: "Instagram", href: "https://instagram.com/" },
-  { label: "GitHub", href: "https://github.com/dodoloiu1" },
   { label: "The Orange Alliance", href: "https://www.theorangealliance.org/teams/25145" },
+  { label: "FTC Events", href: "https://ftc-events.firstinspires.org/team/25145" },
+  { label: "Nație Prin Educație", href: "https://teams.natieprineducatie.ro/RegistrationStatus/Regionale" },
 ] as const;

@@ -1,23 +1,33 @@
 import type { Config } from "tailwindcss";
 
+/**
+ * Palette derived from the ILC ROBOTIX logo:
+ * deep maroon surfaces (#4A2B2E) with periwinkle-lavender line work (#A8A7D8),
+ * plus a restrained brass accent for awards.
+ */
 const config: Config = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
         ink: {
-          950: "#05060a",
-          900: "#0a0c12",
-          800: "#11141d",
-          700: "#1a1f2b",
+          950: "#120a0c",
+          900: "#1a0f12",
+          800: "#251519",
+          700: "#332026",
+        },
+        maroon: {
+          DEFAULT: "#4A2B2E",
+          soft: "#6B3D42",
+          deep: "#332026",
         },
         accent: {
-          DEFAULT: "#22d3ee",
-          soft: "#67e8f9",
-          deep: "#0e7490",
+          DEFAULT: "#A8A7D8",
+          soft: "#CBCBE9",
+          deep: "#7B79B5",
         },
         amber: {
-          glow: "#fbbf24",
+          glow: "#D4A24A",
         },
       },
       fontFamily: {
@@ -35,7 +45,7 @@ const config: Config = {
         mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],
       },
       boxShadow: {
-        glow: "0 0 60px -12px rgba(34, 211, 238, 0.45)",
+        glow: "0 0 60px -12px rgba(168, 167, 216, 0.45)",
         card: "0 20px 60px -30px rgba(0, 0, 0, 0.9)",
       },
       keyframes: {

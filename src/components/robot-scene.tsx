@@ -14,10 +14,10 @@ import { SUBSYSTEMS, type Subsystem } from "@/data/hardware";
 
 type V3 = [number, number, number];
 
-const ACCENT = "#22d3ee";
-const AMBER = "#fbbf24";
-const METAL = "#1a1f2b";
-const METAL_LIGHT = "#2a3140";
+const ACCENT = "#A8A7D8";
+const AMBER = "#D4A24A";
+const METAL = "#2a161a";
+const METAL_LIGHT = "#3b2429";
 
 const HOTSPOTS: { id: string; position: V3 }[] = [
   { id: "vision", position: [0, 2.6, 0.4] },

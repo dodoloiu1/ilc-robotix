@@ -1,53 +1,89 @@
-import { Activity, Award, Gauge, Trophy } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { Activity, Award, Gauge, MapPin, Trophy } from "lucide-react";
 import SectionHeading from "@/components/section-heading";
 import Reveal from "@/components/reveal";
 import SeasonChart from "@/components/season-chart";
-import { season } from "@/data/season";
-
-const winRate =
-  season.matchesPlayed > 0
-    ? Math.round((season.wins / season.matchesPlayed) * 100)
-    : null;
-
-const METRICS = [
-  {
-    icon: Activity,
-    label: "Matches played",
-    value: season.matchesPlayed ? String(season.matchesPlayed) : "—",
-  },
-  {
-    icon: Trophy,
-    label: "Win rate",
-    value: winRate !== null ? `${winRate}%` : "—",
-    hint: season.matchesPlayed
-      ? `${season.wins}W · ${season.losses}L · ${season.ties}T`
-      : undefined,
-  },
-  {
-    icon: Gauge,
-    label: "Season OPR",
-    value: season.opr !== null ? season.opr.toFixed(1) : "—",
-    hint: season.npOpr !== null ? `NP-OPR ${season.npOpr.toFixed(1)}` : undefined,
-  },
-  {
-    icon: Award,
-    label: "Ranking",
-    value: season.rank ?? "—",
-  },
-];
+import { seasons } from "@/data/season";
 
 export default function SeasonSection() {
+  const [selectedId, setSelectedId] = useState("2024-25");
+  const current = seasons.find((s) => s.id === selectedId) ?? seasons[0];
+
+  const winRate = current.matchesPlayed
+    ? Math.round((current.wins / current.matchesPlayed) * 100)
+    : null;
+
+  const bestOpr = current.events.reduce<number>(
+    (best, event) => (event.opr !== null && event.opr > best ? event.opr : best),
+    -Infinity,
+  );
+
+  const bestRank = current.events.reduce<number | null>((best, event) => {
+    if (event.qualRank === null) return best;
+    if (best === null || event.qualRank < best) return event.qualRank;
+    return best;
+  }, null);
+
+  const metrics = [
+    {
+      icon: Activity,
+      label: "Matches played",
+      value: String(current.matchesPlayed),
+    },
+    {
+      icon: Trophy,
+      label: "Win rate",
+      value: winRate !== null ? `${winRate}%` : "—",
+      hint: `${current.wins}W · ${current.losses}L · ${current.ties}T`,
+    },
+    {
+      icon: Gauge,
+      label: "Best event OPR",
+      value: bestOpr === -Infinity ? "—" : bestOpr.toFixed(1),
+    },
+    {
+      icon: Award,
+      label: "Best rank",
+      value: bestRank !== null ? `#${bestRank}` : "—",
+      hint: current.rank ?? undefined,
+    },
+  ];
+
   return (
     <section id="season" className="section-pad relative">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Match intelligence"
           title="Season & match analytics"
-          description="Every qualification and playoff match, ranked against the official FTC event data — OPR, NP-OPR, rankings and awards for team #25145."
+          description="Verified qualification results for team #25145, aggregated from the official FTC Events, FTCStats and The Orange Alliance records."
         />
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {METRICS.map((metric, i) => (
+        <Reveal delay={0.05}>
+          <div className="mt-10 flex flex-wrap gap-2">
+            {seasons.map((season) => (
+              <button
+                key={season.id}
+                type="button"
+                onClick={() => setSelectedId(season.id)}
+                className={`rounded-full border px-4 py-2 text-xs font-semibold transition ${
+                  season.id === current.id
+                    ? "border-accent bg-accent/20 text-white"
+                    : "border-white/10 bg-white/[0.02] text-zinc-400 hover:border-accent/50 hover:text-white"
+                }`}
+              >
+                {season.label}
+                <span className="ml-2 font-mono text-[10px] text-zinc-500">
+                  {season.game}
+                </span>
+              </button>
+            ))}
+          </div>
+        </Reveal>
+
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {metrics.map((metric, i) => (
             <Reveal key={metric.label} delay={i * 0.06}>
               <div className="glass group relative overflow-hidden rounded-2xl p-6">
                 <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent/10 blur-2xl transition group-hover:bg-accent/20" />
@@ -70,67 +106,74 @@ export default function SeasonSection() {
           <div className="glass mt-8 overflow-hidden rounded-3xl">
             <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-6 py-4">
               <div>
-                <h3 className="text-base font-semibold text-white">Match log</h3>
+                <h3 className="text-base font-semibold text-white">
+                  {current.label} · {current.game}
+                </h3>
                 <p className="text-xs text-zinc-500">
-                  {season.season} · {season.game}
+                  {current.events.length} events ·{" "}
+                  {current.matchesPlayed} qualification matches
                 </p>
               </div>
               <span className="chip">
-                <span className="h-1.5 w-1.5 rounded-full bg-amber-glow animate-pulse-slow" />
-                {season.pending
-                  ? "Syncing official FTC registry data…"
-                  : "Verified against FTC Events"}
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                Verified against FTC Events
               </span>
             </div>
 
-            {season.matches.length === 0 ? (
+            {current.matches.length === 0 ? (
               <div className="grid place-items-center gap-3 px-6 py-16 text-center">
                 <div className="grid h-12 w-12 place-items-center rounded-2xl border border-white/10 bg-white/5">
                   <Activity className="h-5 w-5 text-zinc-500" />
                 </div>
                 <p className="max-w-md text-sm text-zinc-500">
-                  The match history for #{`25145`} is being pulled from The Orange
-                  Alliance, FTC Events and FTCScout. This dashboard populates
-                  automatically once the research sync completes.
+                  No qualification results are published for the {current.label}{" "}
+                  season yet. FTCScout confirms the team has not played any events
+                  in this season.
                 </p>
               </div>
             ) : (
-              <div className="overflow-x-auto">
-                <table className="w-full min-w-[640px] text-left text-sm">
-                  <thead className="text-xs uppercase tracking-wider text-zinc-500">
+              <div className="max-h-[26rem] overflow-auto">
+                <table className="w-full min-w-[680px] text-left text-sm">
+                  <thead className="sticky top-0 bg-ink-900 text-xs uppercase tracking-wider text-zinc-500">
                     <tr className="border-b border-white/10">
                       <th className="px-6 py-3">Event</th>
                       <th className="px-6 py-3">Match</th>
                       <th className="px-6 py-3">Alliance</th>
                       <th className="px-6 py-3">Result</th>
                       <th className="px-6 py-3">Score</th>
-                      <th className="px-6 py-3">Opponent</th>
+                      <th className="px-6 py-3">Opponents</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {season.matches.map((match) => (
+                    {current.matches.map((match, index) => (
                       <tr
-                        key={`${match.event}-${match.match}`}
+                        key={`${match.event}-${match.match}-${index}`}
                         className="border-b border-white/5 text-zinc-300"
                       >
                         <td className="px-6 py-3 text-white">{match.event}</td>
-                        <td className="px-6 py-3 font-mono text-xs">{match.match}</td>
+                        <td className="px-6 py-3 font-mono text-xs">
+                          {match.match}
+                        </td>
                         <td className="px-6 py-3 capitalize">{match.alliance}</td>
                         <td className="px-6 py-3">
                           <span
                             className={
                               match.result === "W"
-                                ? "text-emerald-400"
+                                ? "text-accent-soft"
                                 : match.result === "L"
-                                  ? "text-rose-400"
+                                  ? "text-maroon-soft"
                                   : "text-zinc-400"
                             }
                           >
                             {match.result}
                           </span>
                         </td>
-                        <td className="px-6 py-3 font-mono text-xs">{match.score}</td>
-                        <td className="px-6 py-3">{match.opponent}</td>
+                        <td className="px-6 py-3 font-mono text-xs">
+                          {match.score}
+                        </td>
+                        <td className="px-6 py-3 font-mono text-xs text-zinc-500">
+                          {match.opponent}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -138,9 +181,9 @@ export default function SeasonSection() {
               </div>
             )}
 
-            {season.awards.length > 0 ? (
+            {current.awards.length > 0 ? (
               <div className="flex flex-wrap gap-2 border-t border-white/10 px-6 py-4">
-                {season.awards.map((award) => (
+                {current.awards.map((award) => (
                   <span
                     key={award}
                     className="chip !border-amber-glow/30 !bg-amber-glow/10 !text-amber-glow"
@@ -156,7 +199,74 @@ export default function SeasonSection() {
 
         <Reveal delay={0.12}>
           <div className="glass mt-8 overflow-hidden rounded-3xl">
-            <SeasonChart />
+            <SeasonChart matches={current.matches} />
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.14}>
+          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {current.events.map((event) => (
+              <article
+                key={event.name}
+                className="glass rounded-2xl p-5 transition hover:border-accent/30"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <h4 className="text-sm font-semibold text-white">
+                    {event.name}
+                  </h4>
+                  {event.placement ? (
+                    <span className="shrink-0 font-mono text-xs text-accent">
+                      {event.placement}
+                    </span>
+                  ) : null}
+                </div>
+                <div className="mt-2 flex items-center gap-2 text-xs text-zinc-500">
+                  <MapPin className="h-3 w-3" />
+                  {event.location}
+                </div>
+                <div className="mt-1 text-xs text-zinc-500">{event.date}</div>
+                <div className="mt-4 grid grid-cols-3 gap-2 border-t border-white/10 pt-4 font-mono text-xs">
+                  <div>
+                    <div className="text-[10px] uppercase tracking-wider text-zinc-600">
+                      OPR
+                    </div>
+                    <div className="text-zinc-200">
+                      {event.opr !== null ? event.opr.toFixed(1) : "—"}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] uppercase tracking-wider text-zinc-600">
+                      Rank
+                    </div>
+                    <div className="text-zinc-200">
+                      {event.qualRank !== null
+                        ? `#${event.qualRank}/${event.qualRankTotal}`
+                        : "—"}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] uppercase tracking-wider text-zinc-600">
+                      Record
+                    </div>
+                    <div className="text-zinc-200">
+                      {event.eventRecord ?? "—"}
+                    </div>
+                  </div>
+                </div>
+                {event.awards.length > 0 ? (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {event.awards.map((award) => (
+                      <span
+                        key={award}
+                        className="rounded-md border border-amber-glow/30 bg-amber-glow/10 px-2 py-1 text-[10px] text-amber-glow"
+                      >
+                        {award}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+              </article>
+            ))}
           </div>
         </Reveal>
       </div>

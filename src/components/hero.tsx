@@ -1,11 +1,23 @@
 import { TEAM } from "@/lib/team";
+import { allMatches, seasons } from "@/data/season";
 import Reveal from "@/components/reveal";
 import RobotShowcase from "@/components/robot-showcase";
 
+const totalAwards = seasons.reduce((total, season) => total + season.awards.length, 0);
+const bestOpr = seasons
+  .flatMap((season) => season.events)
+  .reduce(
+    (best, event) => (event.opr !== null && event.opr > best ? event.opr : best),
+    -Infinity,
+  );
+
 const HERO_STATS = [
-  { label: "Matches analysed", value: "—" },
-  { label: "Season OPR", value: "—" },
-  { label: "Awards earned", value: "—" },
+  { label: "Matches analysed", value: String(allMatches.length) },
+  {
+    label: "Best event OPR",
+    value: bestOpr === -Infinity ? "—" : bestOpr.toFixed(1),
+  },
+  { label: "Awards earned", value: String(totalAwards) },
   { label: "Team members", value: "12+" },
 ];
 
@@ -66,8 +78,7 @@ export default function Hero() {
               ))}
             </dl>
             <p className="mt-3 text-xs text-zinc-600">
-              Live FTC registry data is being ingested — metrics populate after
-              the research sync.
+              Verified against FTC Events, FTCStats and The Orange Alliance.
             </p>
           </Reveal>
         </div>
