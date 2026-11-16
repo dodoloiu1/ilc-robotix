@@ -2,6 +2,7 @@ import SiteNav from "@/components/site-nav";
 import Hero from "@/components/hero";
 import SeasonSection from "@/components/season-section";
 import EngineeringSection from "@/components/engineering-section";
+import EngineeringDeepDive from "@/components/engineering-deep-dive";
 import SponsorsSection from "@/components/sponsors-section";
 import TeamSection from "@/components/team-section";
 import SiteFooter from "@/components/site-footer";
@@ -16,6 +17,7 @@ export default function Page() {
       <Hero />
       <SeasonSection />
       <EngineeringSection />
+      <EngineeringDeepDive />
       <SponsorsSection />
       <TeamSection />
       <SiteFooter />
